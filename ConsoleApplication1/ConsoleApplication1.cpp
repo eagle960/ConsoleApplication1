@@ -2,10 +2,13 @@
 //
 
 #include <iostream>
+#include <clocale>
+
 void print_func(void);
 
 int main()
 {
+	setlocale(LC_CTYPE, "rus");
     std::cout << "Hello World!\n";
 	std::cout << "TEST\tTEST\tTEST\t.. .\t." << std::endl;
 	std::cout << "прогон.\n";
