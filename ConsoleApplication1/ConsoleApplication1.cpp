@@ -2,11 +2,24 @@
 //
 
 #include <iostream>
+void print_func(void);
 
 int main()
 {
     std::cout << "Hello World!\n";
 	std::cout << "TEST\tTEST\tTEST\t.. .\t." << std::endl;
+	std::cout << "прогон.\n";
+	for (int i = 0; i < 10; i++) {
+		print_func();
+	}
+	std::cout << "\nконец.\n";
+}
+
+void print_func() {
+
+	std::cout << "*";
+
+
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
